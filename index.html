@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <title>Test Page</title>
+
+  <script type="text/javascript">
+    (function (d, g, t, i, e, s) {
+      var o = d["digities"] = d["digities"] || {};
+      d[e] = d[e] || function () {
+        (o.q = o.q || []).push(arguments);
+      };
+      var cdn_url = "https=/cdn.digities.tech/Gylgzv/amir-mohamad-WEBSITE-20580028";
+
+      s = g.createElement(t);
+      s.async = true;
+      s.src = cdn_url;
+
+      s.onload = function () {
+        if (window.Publisher && window.Publisher.getInstance) {
+          window.Publisher.getInstance().then(function (instance) {
+            o.init = function () {
+              return instance;
+            };
+
+            if (o.q) {
+              o.q.forEach(function (args) {
+                o.init.apply(o, args);
+              });
+              o.q = [];
+            }
+          });
+        }
+      };
+
+      e = g.getElementsByTagName(t)[0];
+      e.parentNode.insertBefore(s, e);
+    })(window, document, "script", "digities");
+  </script>
+</head>
+<body>
+  <h1>PAGE : 6</h1>
+  
+</body>
+</html>
